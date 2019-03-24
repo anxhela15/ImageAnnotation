@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+  <form action="/main_page" class="inline">
+    <button>Home</button>
+  </form>
+  {% load static %}
+  <img src="{% static "/images/" %}{{ username }}.png" alt="My image"  width={{ w }} height={{ h }}>
+</body>
+</html>
